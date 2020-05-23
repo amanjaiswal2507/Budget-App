@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta charset="UTF-8">
+          <meta name="description" content="This is an awesome website">
+          <title>Help Video</title>
+          <style media="screen">
+            body{
+              margin:0;
+              padding: 0;
+              display: block;
+
+
+              background-image: url(background.jpg);
+               background-size: cover;
+              box-sizing: border-box;
+            }
+            video{
+              text-align: center;
+              margin: 0 auto;
+              vertical-align: 50%;
+              display: block;
+              width:1200px;
+              border: 40px solid linear-gradient(235deg, yellow, black, green);
+            }
+            h2 {
+              color: black;
+              text-align: center;
+              letter-spacing: 2px;
+              text-shadow: -1px 0 black, 0 1px maroon, 1px 0 yellow, 0 -1px lightgray;
+            }
+
+            @media screen and (max-width: 920px){
+              body{
+                background-image: url(background.jpg);
+                 background-size: cover;
+                box-sizing: border-box;
+                margin-left: auto;
+                margin-right: auto;
+              }
+              video{
+                padding: 70px 0;
+                text-align: center;
+                margin: 0 auto;
+                vertical-align: 50%;
+                display: block;
+                width:600px;
+                border: 40px solid linear-gradient(235deg, yellow, black, green);
+              }
+
+            }
+            @media screen and (max-width: 600px){
+              body{
+                background-image: url(background.jpg);
+                 background-size: cover;
+                box-sizing: border-box;
+                margin-left: auto;
+                margin-right: auto;
+              }
+              video{
+                padding: 70px 0;
+                text-align: center;
+                margin: 0 auto;
+                vertical-align: 50%;
+                display: block;
+                width:400px;
+                border: 40px solid linear-gradient(235deg, yellow, black, green);
+              }
+
+            }
+
+          </style>
+     </head>
+
+     <body>
+
+     	  <video src="tutorial.mp4" id="help" poster="wallpaper1.jpg"controls width="1260"></video>
+        <!-- video height will automatically adjust according to given width by its aspect ratio-->
+        <!--poster is added as a thumbnail means video will have some image when we open it-->
+        <h2 class="text-uppercase mb-4">Watch How the app works!</h2>
+     </body>
+
+</html>
